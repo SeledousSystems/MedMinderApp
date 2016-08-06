@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="freq_spinner_array">
+        <item>Once a day</item>
+        <item>2x per day</item>
+        <item>3x per day</item>
+        <item>4x per day</item>
+        <item>5x per day</item>
+        <item>6x per day</item>
+    </string-array>
+
+
+</resources>

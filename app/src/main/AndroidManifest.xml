@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jay.pea.mhealthapp2">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <receiver
+        android:name=".AlarmReceiver"
+        android:process=":remote" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/medminder_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".presenter.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".presenter.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".presenter.NewMedication" />
+        <activity android:name=".presenter.MyMedsActivity" />
+        <activity android:name=".presenter.MedicationRecordActivity" />
+        <activity android:name=".presenter.MissedMedicationActivity" />
+
+        <receiver
+            android:name=".utilityClasses.AlarmReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".presenter.FutureMeds" />
+        <activity android:name=".presenter.SafetyMonitorDisplay" />
+        <activity android:name=".presenter.AllDoseActivity"></activity>
+    </application>
+
+</manifest>

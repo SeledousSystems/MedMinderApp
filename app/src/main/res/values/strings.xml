@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MedMinder</string>
+    <string name="action_about">About</string>
+    <string name="run_diagnostics">Run Diagnostics</string>
+    <string name="menu_delete">Delete</string>
+    <string name="menu_view_dose">View Dose</string>
+    <string name="menu_view_med">View Medication</string>
+    <string name="test_safety_monitor">Test Safety Monitor</string>
+    <string name="run_safety_monitor">Run Safety Monitor</string>
+    <string name="menu_edit">Edit</string>
+    <string name="you_need_x_doses_2_tablets_of_asprin">You Need x Doses (2 Tablets) of Asprin</string>
+
+</resources>
